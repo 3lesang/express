@@ -1,0 +1,7 @@
+mixin content(posts)
+    include card
+    each post in posts
+        +card(post.img, post.title, post.des)
+
+
+

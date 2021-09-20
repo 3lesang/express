@@ -1,0 +1,12 @@
+mixin card(img, title, des)
+    .card
+        img.card-img-top(src=img, alt='img')
+        .card-body
+            h3.card-title= title 
+            p.card-des= des
+        .card-footer
+            .user
+                .avatar-cover
+                    img.avatar-user(src='static/img/logo.png', alt="")
+                p.user-name Monet Monet
+            button.btn Read

@@ -1,0 +1,18 @@
+extends layouts/sub.pug
+
+block login
+    form(action="", method="post").container
+        .login
+            h3 Store
+            .input-group
+                .input-group-text @
+                input.form-control(type='text', placeholder='Username')
+            .input-group
+                label(for='') Password
+                input.form-control.form-password(type='password', placeholder='Password')
+            button.btn-submit(type='submit') Login
+            p Don't have an account? 
+                a(href="/register") Sign up 
+
+
+
